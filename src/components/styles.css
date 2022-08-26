@@ -1,0 +1,135 @@
+.card {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.card__container {
+	border-radius: 0.5rem;
+	background: white;
+}
+
+.card__product {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__info {
+	padding: 1rem;
+}
+
+.card__info-product {
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	font-size: 0.8rem;
+	color: gray;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.card__info-title {
+	margin-top: 10px;
+	font-family: 'Fraunces', serif;
+	line-height: 30px;
+}
+
+.card__info-desc {
+	margin-top: 1rem;
+	line-height: 2rem;
+	color: gray;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+.card__info-price {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.card__info-price h2 {
+	font-size: 35px;
+	font-family: 'Fraunces', serif;
+	color: var(--dark-cyan);
+}
+
+.card__info-price p {
+	margin-left: 2rem;
+	color: gray;
+	text-decoration: line-through;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+
+.card__info-cart {
+	margin-top: 1rem;
+	background-color: var(--dark-cyan);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+.card__info-cart button {
+	outline: none;
+	color: white;
+	border: 0;
+	background-color: var(--dark-cyan);
+	margin-left: 0.7rem;
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+	.card__container {
+		display: flex;
+		flex-direction: row;
+		border: 0.5rem;
+		height: 800px;
+		width: 1000px;
+		margin: 0 auto;
+		align-items: center;
+	}
+	.card__product {
+		height: 100%;
+		width: 500px;
+		border-radius: 0.5rem 0 0rem 0.5rem;
+	}
+
+	.card__info {
+		display: flex;
+		flex-direction: column;
+		padding: 3rem;
+	}
+
+	.card__info-product {
+		font-size: 18px;
+	}
+	.card__info-title {
+		margin-top: 30px;
+		font-size: 60px;
+		line-height: 65px;
+	}
+	.card__info-desc {
+		font-size: 16px;
+		margin-top: 40px;
+	}
+
+	.card__info-price {
+		margin-top: 50px;
+	}
+
+	.card__info-price h2 {
+		font-size: 40px;
+	}
+
+	.card__info-price p {
+		font-size: 16px;
+	}
+
+	.card__info-cart {
+		margin-top: 30px;
+	}
+}
