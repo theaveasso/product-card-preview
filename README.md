@@ -9,6 +9,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Tailwind CSS
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
